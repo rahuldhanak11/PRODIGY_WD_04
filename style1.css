@@ -1,0 +1,372 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: rgb(20, 19, 26);
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 5%;
+}
+
+.navlist {
+    background-color: rgb(16, 15, 20);
+    display: flex;
+    width: 300px;
+    height: 250px;
+    flex-direction: column;
+    border: 2px solid crimson;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 22px;
+}
+
+li {
+    padding: 20px;
+}
+
+.navlist a {
+    padding: 1px 2px;
+    font-size: 15px;
+    color: rgb(205, 205, 205);
+    transition: all 0.4s;
+
+}
+
+.navlist li a:hover {
+    color: crimson;
+}
+
+.btn button {
+    padding: 10px 20px;
+    background-color: rgb(20, 19, 26);
+    border: 2px solid rgb(96, 209, 62);
+    border-radius: 22px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    transition: all 0.4s;
+}
+
+.btn button:hover {
+    background-color: rgb(96, 209, 62);
+    cursor: pointer;
+}
+
+.socials {
+    display: flex;
+    width: 300px;
+    height: 250px;
+    flex-direction: column;
+    border: 2px solid rgb(46, 44, 55);
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 22px;
+    background-color: rgba(46, 44, 53, 0.755);
+}
+
+.socials a {
+    padding: 1px 2px;
+    font-size: 15px;
+    color: rgb(205, 205, 205);
+    transition: all 0.4s;
+}
+
+.socials li a:hover {
+    color: rgb(123, 119, 119);
+    transform: scale(1.1);
+}
+
+.navbar {
+    margin-top: 50px;
+}
+
+.navbar p {
+    color: rgb(205, 205, 205);
+    font-size: 24px;
+    text-align: center;
+}
+
+section {
+    max-width: 800px;
+    margin: 2em auto;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.hometext {
+    background-color: rgb(16, 15, 20);
+    border: 2px solid crimson;
+    max-width: 700px;
+    height: 350px;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 22px;
+    color: rgb(205, 205, 205);
+}
+
+.logo {
+    padding: 15px;
+    margin: 0 35px;
+    visibility: hidden;
+}
+
+.hometext h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: crimson
+}
+
+.hometext h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: crimson;
+}
+
+.info {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+    color: rgb(205, 205, 205);
+}
+
+.myskills {
+    display: flex;
+    justify-content: space-around;
+    /* Adjust the spacing based on your preference */
+    align-items: center;
+    /* Align items vertically at the center */
+    margin-top: 20px;
+}
+
+.project {
+    background-color: rgb(16, 15, 20);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    flex-direction: row;
+    /* Stack the items vertically within each project box */
+    align-items: center;
+    /* Center the items horizontally within each project box */
+    width: 250px;
+    height: 200px;
+    padding: 30px;
+    
+    border-radius: 16px;
+    color: rgb(205, 205, 205);
+    font-size: 14px;
+}
+
+.project#frontend{
+    border: 2px solid rgba(51, 255, 0, 0.362);
+    box-shadow: 0 0 10px 1px rgba(51, 255, 0, 0.362)    ;
+}
+
+.project#backend{
+    border: 2px solid rgba(195, 255, 0, 0.366);
+    box-shadow: 0 0 10px 1px rgba(195, 255, 0, 0.366);
+}
+
+.project#database{
+    border: 2px solid rgba(198, 30, 30, 0.404);
+    box-shadow: 0 0 10px 1px rgba(198, 30, 30, 0.404);
+}
+
+.project .front {
+    margin: 4px;
+    padding: 6px;
+    border-radius: 10px;
+    border: 1px solid rgba(51, 255, 0, 0.362);
+    background-color: rgb(14, 14, 19);
+}
+
+.project .back {
+    margin: 4px;
+    padding: 6px;
+    border-radius: 10px;
+    border: 1px solid rgba(195, 255, 0, 0.366);
+    background-color: rgb(14, 14, 19);
+}
+
+.project .data {
+    margin: 4px;
+    padding: 6px;
+    border-radius: 10px;
+    border: 1px solid rgba(198, 30, 30, 0.404);
+    background-color: rgb(14, 14, 19);
+}
+
+.myprojs {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.proj {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    flex-direction: row;
+    /* Stack the items vertically within each project box */
+    align-items: center;
+    /* Center the items horizontally within each project box */
+    width: 250px;
+    height: 250px;
+    padding: 30px;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 20px;
+    color: rgb(205, 205, 205);
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.proj#tictac {
+    position: relative;
+    background-image: url('images/tictactoe.png');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.proj#stopw {
+    position: relative;
+    background-image: url('images/stopw.jpg');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.proj#lpage {
+    position: relative;
+    background-image: url('landing page/landingpage/womangym2.jpg');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.popup1{
+    background-color: rgba(205, 205, 205, 0.915);
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+}
+
+.tictactoe{
+    margin: 15px;
+    text-align: start;
+    color:rgb(20, 19, 26);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.language{
+    margin: 17px;
+    text-align: start;
+    color:rgb(20, 19, 26);
+}
+.proj#tictac:hover{
+    transform: scale(1.05);
+    transition: all 0.4s;
+    filter: invert(10%);
+}
+
+.proj#stopw:hover{
+    transform: scale(1.05);
+    transition: all 0.4s;
+    filter: invert(10%);
+}
+.proj#lpage:hover{
+    transform: scale(1.05);
+    transition: all 0.4s;
+    filter: invert(10%);
+}
+.about{
+    display: flex;
+    
+}
+
+.aboutme{
+    background-color: rgb(16, 15, 20);
+    border: 2px solid crimson;
+    border-radius: 22px;
+    margin-top: 20px;
+    padding: 40px;
+}
+
+.me{
+    margin-top: px;
+    color: rgb(205, 205, 205);
+}
+
+.intro{
+    color: rgb(205, 205, 205);
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 570;
+}
+
+.aboutme h2{
+    margin: 15px;
+}
+
+.education{
+    color: rgb(205, 205, 205);
+}
+
+.education .btechyear{
+    color: rgba(246, 255, 0, 0.738);
+    margin-top: 10px;
+}
+
+.education .jryear{
+    color: rgba(246, 255, 0, 0.738);
+    margin-top: 10px;
+}
+
+.education .jrfield{
+    color: rgba(246, 255, 0, 0.738);
+}
+.education .hindi{
+    color: rgba(246, 255, 0, 0.738);
+    margin-top: 5px;
+}
+.education .gujju{
+    margin-top: 5px;
+}
+.education .english{
+    color: rgba(246, 255, 0, 0.738);
+    margin-top: 5px;
+}
